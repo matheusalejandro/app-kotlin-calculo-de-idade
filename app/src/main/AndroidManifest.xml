@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CalculoDeIdade">
-        <activity android:name=".MainActivity"
+        <activity android:name=".view.MainActivity"
             android:screenOrientation="portrait"
             />
-        <activity android:name=".SpashActivity">
+        <activity android:name=".view.SpashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

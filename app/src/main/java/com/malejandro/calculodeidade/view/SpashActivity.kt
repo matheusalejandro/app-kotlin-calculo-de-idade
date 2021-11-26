@@ -1,10 +1,11 @@
-package com.malejandro.calculodeidade
+package com.malejandro.calculodeidade.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import com.malejandro.calculodeidade.R
 
 class SpashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,13 +15,13 @@ class SpashActivity : AppCompatActivity() {
         //avisa que vai chamar uma função após um delay
         Handler(Looper.myLooper()!!).postDelayed({
             //defini daonde eu estou (this = Splash) e para onde eu vou (MainActivity)
-            val intent = Intent(
+            val mainScreen = Intent(
                 this,
                 MainActivity::class.java
             )
 
             //manda rodar
-            startActivity(intent)
+            startActivity(mainScreen)
             //para não retornar a pagina splash
             finish()
 
